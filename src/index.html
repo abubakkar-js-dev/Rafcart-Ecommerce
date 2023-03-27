@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project setup</title>
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../dist/style.css">
+</head>
+<body class="h-screen">
+    <div class="max-w-4xl mx-auto print:hidden">
+        <div class="mt-20 px-4 flex justify-center space-x-6">
+            <button class="btn btn-cyan shadow-lg shadow-cyan-500/50">Subscribe</button>
+            <button class="btn btn-blue shadow-lg shadow-blue-500/50">Subscribe</button>
+            <button class="btn btn-indigo shadow-lg shadow-indigo-500/50">Subscribe</button>
+        </div>
+    </div>
+    <div class="mt-20 p-4 space-y-2 columns-xs ring-2 ring-purple-600">
+        <p class="text-slate-600 print:text-black">
+            Lorem, <span class="underline decoration-violet-500 decoration-2 mb-2">ipsum dolor</span> sit amet consectetur adipisicing elit. Porro et est hic veniam nesciunt cum quos necessitatibus eius quia similique, distinctio veritatis illum sed sunt a officia labore ad iure.
+        </p>
+        <p class="text-slate-600 print:text-red-400">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro et est hic veniam nesciunt cum quos necessitatibus eius quia similique, distinctio veritatis illum sed sunt a officia labore ad iure.
+        </p>
+        <p class="text-slate-600 print:text-black">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro et est hic veniam nesciunt cum quos necessitatibus eius quia similique, distinctio veritatis illum sed sunt a officia labore ad iure.
+        </p>
+        <p class="mt-6 text-right">
+            <button 
+            onclick="window.print()"
+            class="px-4 py-2 text-white bg-purple-500 shadow-md shadow-purple-500/70 rounded-lg print:hidden"
+            >Print Now</button>
+        </p>
+    </div>
+    
+<script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>    
+</body>
+</html>

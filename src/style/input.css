@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn{
+        @apply text-white px-4 py-2 rounded-full;
+    }
+    .btn-cyan{
+        @apply bg-cyan-500;
+    }
+    .btn-blue{
+        @apply bg-blue-500;
+    }
+    .btn-indigo{
+        @apply bg-indigo-500;
+    }
+}
