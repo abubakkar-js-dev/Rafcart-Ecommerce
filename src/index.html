@@ -40,20 +40,16 @@
  <div class="lg:container bg-blue-500 py-6"></div>
  <div class="xl:container bg-gray-500 py-6"></div>
  <div class="2xl:container bg-indigo-500 py-6"></div> -->
-<span
-class="box-decoration-slice bg-gradient-to-r from-purple-500 to-pink-500 text-white px-2 box-border hover:box-content rounded-sm"
->Hello 
-    <br>
-    world!
-</span>
-<span
-class="box-decoration-clone bg-gradient-to-r from-purple-500 to-pink-500 text-white px-2 rounded-l-lg rounded-tr-md"
->Hello 
-    <br>
-    world!
-</span>
+<div class="grid grid-cols-2 grid-flow-col-dense gap-1 transform hover:scale-150 cursor-pointer justify-self-center">
+    <div class="bg-cyan-500 col-end-3 col-start-1  h-10 py-4 px-10 text-white
+    hover:antialiased self-center text-center">Hello world</div>
+    <div class="bg-blue-500 row-span-2 py-4 px-10"></div>
+    <div class="bg-green-500 w-12 h-10 py-4  px-10"></div>
+    <div class="bg-purple-500 w-12 h-10 py-4 px-10"></div>
+</div>
+<h2 class="bg-green-300 text-white hover:subpixel-antialiased hover:cursor-pointer">hello world</h2>
 
-
- <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>    
+ <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+ <script src="../result.js"></script>    
 </body>
 </html>
