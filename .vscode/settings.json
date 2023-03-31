@@ -1,5 +1,6 @@
 {
     "css.validate": false,
     "tailwindCSS.emmetCompletions": true,
+    "liveServer.settings.fullReload": true,
 
 }
