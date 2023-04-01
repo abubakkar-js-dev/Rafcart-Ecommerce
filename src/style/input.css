@@ -2,17 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .btn{
-        @apply text-white px-4 py-2 rounded-full;
+@layer base{
+    body{
+        @apply font-poppins;
     }
-    .btn-cyan{
-        @apply bg-cyan-500;
+    h1,h2,h3,h4,h5,h6{
+        @apply font-roboto;
     }
-    .btn-blue{
-        @apply bg-blue-500;
-    }
-    .btn-indigo{
-        @apply bg-indigo-500;
-    }
+
 }

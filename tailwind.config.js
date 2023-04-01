@@ -3,22 +3,30 @@ module.exports = {
     "./src/**/*.{html,css,js}",
   ],
   theme: {
+    screen: {
+      sm: '576px',
+      md: '768px',
+      lg: '992px',
+      xl: '1200px',
+
+    },
     container : {
       center: true,
-      padding:{
-          DFAULT: '1rem',
-          sm: '2rem',
-          md: '3rem',
-          lg: '4rem',
-          xl: '5rem',
-         '2xl': '6rem'
-      },
+      padding: '1rem',
     },
     extend: {
-      aspectRatio:{
-        '4/3' : '4 / 3',
+      fontFamily: {
+        poppins: "'Poppins', 'sans-serif'",
+        roboto: "'Roboto', 'sans-serif'",
+
       },
+      colors: {
+        'primary' : '#FD3D57',
+      }
     },
+  },
+  variants: {
+    // display: ['group-hover']
   },
   plugins: [],
 }
