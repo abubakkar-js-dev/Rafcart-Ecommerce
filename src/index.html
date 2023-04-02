@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce project</title>
+    <link rel="icon" href="../images/avatar2.png">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../dist/style.css">
 </head>
@@ -23,7 +24,7 @@
                     <i class="fas fa-search" aria-hidden="true"></i>
                 </span>
                 <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary" placeholder="Search">
-                <button class="bg-primary border border-primary text-white px-8 rounded-r-md font-medium hover:bg-transparent hover:text-primary transition">Search</button>
+                <button class="btn-primary rounded-l-none">Search</button>
             </div>
             <!-- searchbar end -->
             <!-- icons -->
@@ -35,7 +36,7 @@
                     <div class="text-xs leading-3">Wish Lists</div> 
                     <span class="absolute -right-0 -top-1 w-5 h-5 rounded-full  bg-primary text-xs text-white flex items-center justify-center">8</span>
                 </a>
-                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative hidden lg:block">
                     <div class="text-2xl">
                         <i class="fas fa-shopping-bag" aria-hidden="true"></i>
                     </div>
@@ -62,8 +63,8 @@
                 <span class="text-white">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </span>
-                <span class="capitalize ml-2 text-white">All catagories</span>
-                <div class=" absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed border-t-0 opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                <span class="capitalize ml-2 text-white">All categories</span>
+                <div class=" absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed border-t-0 opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible z-50">
                     <!-- single catagory starts -->
                     <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
                         <img src="../images/icons/bed.svg" alt="bed" class="w-5 h-5 object-contain">
@@ -121,6 +122,104 @@
         </div>
     </nav>
     <!-- nav ends -->
+    <!-- mobile menu bar start-->
+    <div class="fixed left-0 bottom-0 shadow-sm w-full flex justify-around items-start border-t border-gray-200 px-6 py-3 bg-white z-50 lg:hidden">
+        <a href="#" class="text-center block relative text-gray-700 transition hover:text-primary lg:hidden">
+            <div class="text-2xl" id="menu-bar">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="text-xs leading-3">Menu</div>
+        </a>
+        <a href="#" class="text-center block relative text-gray-700 transition hover:text-primary lg:hidden">
+            <div class="text-2xl" id="menu-bar">
+                <i class="fas fa-list" aria-hidden="true"></i>
+            </div>
+            <div class="text-xs leading-3">Category</div>
+        </a>
+        <a href="#" class="text-center block relative text-gray-700 transition hover:text-primary lg:hidden">
+            <div class="text-2xl" id="menu-bar">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="text-xs leading-3">Search</div>
+        </a>
+        <a href="#" class="text-center block text-gray-700 hover:text-primary transition relative ">
+            <div class="text-2xl">
+                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div> 
+            <span class="absolute -right-2 -top-1 w-5 h-5 rounded-full  bg-primary text-xs text-white flex items-center justify-center">3</span>
+        </a>
+    </div>
+    <!-- mobile menu bar end -->
+    <!-- banner start -->
+    <div class="bg-cover bg-no-repeat bg-center py-36 relative" style="background-image: url('../images/banner-bg.jpg');">
+        <div class="container">
+        <!-- banner content start -->
+        <h1 class="mb-4 text-3xl md:text-4xl lg:text-5xl text-gray-800 font-medium">Best Collection For 
+            <br class="hidden sm:block">
+            Home Decoration</h1>
+        <p class="text-base text-gray-600 leading-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa 
+            <br class="hidden sm:block">
+            assumenda aliquid inventore nihil laboriosam odio
+        </p>
+        <!-- banner content ends -->
+        <!-- banner button start -->
+        <div class="mt-12">
+            <a href="#" class="btn-primary uppercase">shop now</a>
+        </div>
+        <!-- banner button ends -->
+        </div>
+    </div>
+    <!-- banner end -->
+    <!-- features start -->
+    <div class="container py-16">
+        <div class="lg:w-10/12 flex justify-center mx-auto flex-col lg:flex-row gap-3 lg:gap-6">
+            <!-- single features start -->
+            <div class="border border-primary px-8 lg:px-6 py-4 lg:py-6 flex justify-center items-center gap-5">
+                <img src="../images/icons/delivery-van.svg" alt="delivery-van" class="w-10 lg:w-12 h-12 object-contain">
+                <div>
+                    <h4 class="text-lg capitalize font-medium">free shipping</h4>
+                    <p class="text-xs lg:text-sm text-gray-500">
+                        Order over $200
+                    </p>
+                </div>
+            </div>
+            <!-- single features end -->
+            
+            <!-- single features start -->
+            <div class="border border-primary px-8 lg:px-6 py-4 lg:py-6 flex justify-center items-center gap-5">
+                <img src="../images/icons/money-back.svg" alt="delivery-van" class="w-10 lg:w-12 h-12 object-contain">
+                <div>
+                    <h4 class="text-lg capitalize font-medium">Money Returns
+                    </h4>
+                    <p class="text-xs lg:text-sm text-gray-500">
+                        30 Days money return
+                    </p>
+                </div>
+            </div>
+            <!-- single features end -->
+
+            <!-- single features start -->
+            <div class="border border-primary px-8 lg:px-6 py-4 lg:py-6 flex justify-center items-center gap-5">
+                <img src="../images/icons/service-hours.svg" alt="delivery-van" class="w-10 lg:w-12 h-12 object-contain">
+                <div>
+                    <h4 class="text-lg capitalize font-medium">24/7 Support</h4>
+                    <p class="text-xs lg:text-sm text-gray-500">
+                        Customer support
+                    </p>
+                </div>
+            </div>
+            <!-- single features end -->
+        </div>
+    </div>
+    <!-- features ends -->
+
+
+
+
+
+
+
  <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
  <script src="../result.js"></script>
 </body>
