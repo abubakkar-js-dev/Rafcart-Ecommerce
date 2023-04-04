@@ -16,4 +16,10 @@
     .btn-primary{
         @apply bg-primary hover:bg-transparent border border-primary text-white px-8 py-3 font-medium rounded-md hover:text-primary transition;
     }
+
+}
+@layer components{
+    .section-heading{
+        @apply text-2xl md:text-3xl font-medium text-gray-800 mb-6 uppercase;
+    }
 }
