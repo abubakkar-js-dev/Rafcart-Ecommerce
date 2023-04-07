@@ -22,4 +22,19 @@
     .section-heading{
         @apply text-2xl md:text-3xl font-medium text-gray-800 mb-6 uppercase;
     }
+    
 }
+
+@layer components{
+    .size-selector:focus input:checked + label{
+        @apply bg-primary text-white;
+    }
+    /* .color-selector:focus input:checked + label{
+        @apply ring-2 ring-primary;
+    } */
+
+}
+/* .input-box{
+    @apply w-full block border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400;
+} */
+
