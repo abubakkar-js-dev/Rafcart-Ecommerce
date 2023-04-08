@@ -229,7 +229,7 @@
             </div>
             <div class="space-y-2">
                 <p class="text-gray-800 font-semibold">
-                    <span>Ability:</span>
+                    <span>Availability:</span>
                     <span class="capitalize text-green-500">In Stock</span>
                 </p>
                 <p class="text-gray-800">
@@ -250,7 +250,7 @@
                 <p class="text-gray-400 line-through font-roboto text-base">$500.00</p>
             </div>
             <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo exercitationem, voluptas soluta harum tempora.</p>
-            <div class="-space-y-1">
+            <div class="-space-y-0.5">
               <!-- size -->
                 <div class="pt-4 mb-1">
                     <h3 class="text-gray-800 text-base mb-1">Size</h3>
@@ -289,7 +289,7 @@
                 </div>
                 <!-- size end -->
                 <!-- color  -->
-                <div class="pt-4 mb-2">
+                <div class="pt-4 mb-3">
                     <h3 class="text-gray-800 text-base mb-1">Color</h3>
                     <div class="flex items-center gap-2">
                         <!-- single color -->
@@ -301,7 +301,7 @@
                         <!-- single color -->
                         <div class="color-selector">
                             <input type="radio" name="color" id="color-red" class="hidden">
-                            <label for="red" class="w-5 h-5 bg-white text xs flex items-center justify-center shadow sm rounded-sm  border-2 border-primary"></label>
+                            <label for="red" class="w-5 h-5 bg-white text xs flex items-center justify-center shadow sm rounded-sm ring-2 ring-primary ring-offset-1"></label>
                         </div>
                         <!-- single color end -->
                         <!-- single color -->
@@ -314,8 +314,8 @@
                 </div>
                 <!-- color end -->
                 <!-- quality  -->
-                <div class="mt-8 mb-4">
-                    <h3 class="capitalize text-gray-800 my-2">quality</h3>
+                <div class="pt-3">
+                    <h3 class="capitalize text-gray-800 mt-3 my-2">Quantity</h3>
                     <div class="flex text-gray-600 border border-gray-300 divide-x-2 divide-gray-300 w-max">
                         <div class="h-8 w-8 flex justify-center items-center cursor-pointer select-none text-xl">-</div>
                         <div class="h-8 w-8 flex justify-center items-center">3</div>
@@ -325,7 +325,7 @@
                 <!-- quality end -->
             </div>
             <!-- add to cart button -->
-            <div class="flex gap-3 border-b border-gray-200 pb-5 mb-4 mt-5">
+            <div class="flex gap-3 border-b border-gray-200 pb-5 mb-4 py-3">
                 <a href="#" class="cart-btn">
                     <span class="mr-2">
                         <i class="fas fa-shopping-bag" aria-hidden="true"></i>
@@ -339,7 +339,17 @@
             </div>
             <!-- add to cart button end -->
             <!-- product share icon  -->
-            <div class="flex space-x-3 mt-4"></div>
+            <div class="flex space-x-3 mt-4 py-1">
+                <a href="#" class="product-share-icon">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="product-share-icon">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="product-share-icon">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
             <!-- product share icon end -->
 
         </div>
@@ -347,6 +357,215 @@
         <!-- product content end -->
     </section>
     <!-- products view end -->
+    <!-- product details and review  -->
+    <section class="container pb-16">
+        <!-- details heading  -->
+        <h3 class="border-b border-gray-200 font-roboto text-gray-700 font- pb-3 capitalize text-xl">product details</h3>
+        <!-- details heading end -->
+        <!-- details content  -->
+        <div class="lg:w-4/5 xl:w-3/5 pt-6">
+            <div class="text-gray-500 space-y-3 text-base">
+                <p>Incredible graphics performanceMacBook Air can take on more graphics-intensive projects than ever. For the first time, content creators can edit and seamlessly play back multiple streams of full‑quality 4K video without dropping a frame.</p>
+
+                <p>Incredible graphics performanceMacBook Air can take on more graphics-intensive projects than ever. For the first time, content creators can edit and seamlessly play back multiple streams of full‑quality 4K video without dropping a frame.</p>
+
+                <p>Apps on MacBook Air can use machine learning (ML) to automatically retouch photos like a pro, make smart tools such as magic wands and audio filters more accurate at auto‑detection, and so much more. That’s not just brain power — that’s the power of a full stack of ML technologies.
+                </p>
+            </div>
+            <!-- details table  -->
+            <table class="border border-collapse w-full text-left text-gray-500 mt-6 text-sm">
+                <tbody>
+                    <tr>
+                        <th class="border border-gray-200 px-2 py-2 font-medium w-40">Color</th>
+                        <td class="border border-gray-200 px-3 py-2">Black, Brown, Red</td>
+                    </tr>
+                    <tr>
+                        <th class="border border-gray-200 px-2 py-2 font-medium w-40">Material</th>
+                        <td class="border border-gray-200 px-3 py-2">Artificial Leather
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="border border-gray-200 px-2 py-2 font-medium w-40">Weight</th>
+                        <td class="border border-gray-200 px-3 py-2">55kg
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- details table end -->
+        </div>
+
+        <!-- details content end -->
+    </section>
+    <!-- product details and review end -->
+    <!-- related product  -->
+    <section class="container pb-16">
+        <h2 class="text-2xl xl:text-3xl font-medium text-gray-700 uppercase mb-6">related products</h2>
+        <!-- product wrapper  -->
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
+            <!-- single product  -->
+            <div class="group rounded shadow bg-white overflow-auto">
+                <!-- product image -->
+                <div class="relative">
+                    <img src="../images/products/product9.jpg" alt="product image" class="w-full">
+                    <div class="absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 hover:bg-opacity-50 opacity-0 group-hover:opacity-100 duration-200">
+                        <a href="#" class="text-white bg-primary h-9 w-9 hover:bg-gray-800 rounded-full flex justify-center items-center">
+                            <i class="fas fa-search text-xl"></i>
+                        </a>
+                        <a href="#" class="text-white bg-primary h-9 w-9 hover:bg-gray-800 rounded-full flex justify-center items-center">
+                            <i class="far fa-heart text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- product image end -->
+                <!-- product content -->
+                <div class="pt-4 pb-3 px-3">
+                    <a href="#">
+                        <h4 class="uppercase text-xl text-gray-800 font-roboto hover:text-primary font-medium duration-200 mb-2">guyer chair</h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-primary font-semibold font-roboto text-xl">$45.00</p>
+                        <p class="text-gray-400 line-through font-roboto text-sm">$45.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex text-sm text-yellow-400 gap-1">
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- product content end -->
+                <!-- product button -->
+                <a href="#" class="btn-primary block w-full text-center py-1 rounded-t-none">Add to Cart</a>
+                <!-- product button end -->
+            </div>
+            <!-- single product end -->
+            <!-- single product  -->
+            <div class="group rounded shadow bg-white overflow-auto">
+                <!-- product image -->
+                <div class="relative">
+                    <img src="../images/products/product1.jpg" alt="product image" class="w-full">
+                    <div class="absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 hover:bg-opacity-50 opacity-0 group-hover:opacity-100 duration-200">
+                        <a href="#" class="text-white bg-primary h-9 w-9 hover:bg-gray-800 rounded-full flex justify-center items-center">
+                            <i class="fas fa-search text-xl"></i>
+                        </a>
+                        <a href="#" class="text-white bg-primary h-9 w-9 hover:bg-gray-800 rounded-full flex justify-center items-center">
+                            <i class="far fa-heart text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- product image end -->
+                <!-- product content -->
+                <div class="pt-4 pb-3 px-3">
+                    <a href="#">
+                        <h4 class="uppercase text-xl text-gray-800 font-roboto hover:text-primary font-medium duration-200 mb-2">guyer Sofa</h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-primary font-semibold font-roboto text-xl">$45.00</p>
+                        <p class="text-gray-400 line-through font-roboto text-sm">$45.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex text-sm text-yellow-400 gap-1">
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- product content end -->
+                <!-- product button -->
+                <a href="#" class="btn-primary block w-full text-center py-1 rounded-t-none">Add to Cart</a>
+                <!-- product button end -->
+            </div>
+            <!-- single product end -->
+            <!-- single product  -->
+            <div class="group rounded shadow bg-white overflow-auto">
+                <!-- product image -->
+                <div class="relative">
+                    <img src="../images/products/product2.jpg" alt="product image" class="w-full">
+                    <div class="absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 hover:bg-opacity-50 opacity-0 group-hover:opacity-100 duration-200">
+                        <a href="#" class="text-white bg-primary h-9 w-9 hover:bg-gray-800 rounded-full flex justify-center items-center">
+                            <i class="fas fa-search text-xl"></i>
+                        </a>
+                        <a href="#" class="text-white bg-primary h-9 w-9 hover:bg-gray-800 rounded-full flex justify-center items-center">
+                            <i class="far fa-heart text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- product image end -->
+                <!-- product content -->
+                <div class="pt-4 pb-3 px-3">
+                    <a href="#">
+                        <h4 class="uppercase text-xl text-gray-800 font-roboto hover:text-primary font-medium duration-200 mb-2">Mini Bed</h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-primary font-semibold font-roboto text-xl">$45.00</p>
+                        <p class="text-gray-400 line-through font-roboto text-sm">$45.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex text-sm text-yellow-400 gap-1">
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- product content end -->
+                <!-- product button -->
+                <a href="#" class="btn-primary block w-full text-center py-1 rounded-t-none">Add to Cart</a>
+                <!-- product button end -->
+            </div>
+            <!-- single product end -->
+            <!-- single product  -->
+            <div class="group rounded shadow bg-white overflow-auto">
+                <!-- product image -->
+                <div class="relative">
+                    <img src="../images/products/product3.jpg" alt="product image" class="w-full">
+                    <div class="absolute inset-0 flex justify-center items-center gap-2 bg-black bg-opacity-40 hover:bg-opacity-50 opacity-0 group-hover:opacity-100 duration-200">
+                        <a href="#" class="text-white bg-primary h-9 w-9 hover:bg-gray-800 rounded-full flex justify-center items-center">
+                            <i class="fas fa-search text-xl"></i>
+                        </a>
+                        <a href="#" class="text-white bg-primary h-9 w-9 hover:bg-gray-800 rounded-full flex justify-center items-center">
+                            <i class="far fa-heart text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- product image end -->
+                <!-- product content -->
+                <div class="pt-4 pb-3 px-3">
+                    <a href="#">
+                        <h4 class="uppercase text-xl text-gray-800 font-roboto hover:text-primary font-medium duration-200 mb-2">Split Bed</h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-primary font-semibold font-roboto text-xl">$45.00</p>
+                        <p class="text-gray-400 line-through font-roboto text-sm">$45.00</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex text-sm text-yellow-400 gap-1">
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- product content end -->
+                <!-- product button -->
+                <a href="#" class="btn-primary block w-full text-center py-1 rounded-t-none">Add to Cart</a>
+                <!-- product button end -->
+            </div>
+            <!-- single product end -->
+        </div>
+        <!-- product wrapper end -->
+    </section>
+    <!-- related product end -->
 
 
 

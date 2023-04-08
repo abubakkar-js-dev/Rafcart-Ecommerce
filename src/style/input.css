@@ -28,6 +28,12 @@
     .cart-btn:hover{
        @apply hover:bg-transparent hover:text-primary;
     }
+    .product-share-icon{
+        @apply text-gray-400  border border-gray-300 bg-transparent shadow rounded-full w-8 h-8 flex items-center justify-center;
+    }
+    .product-share-icon:hover{
+        @apply text-primary/50
+    }
     
 }
 
