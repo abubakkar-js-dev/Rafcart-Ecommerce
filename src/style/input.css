@@ -22,6 +22,12 @@
     .section-heading{
         @apply text-2xl md:text-3xl font-medium text-gray-800 mb-6 uppercase;
     }
+    .cart-btn{
+        @apply bg-primary border border-primary uppercase text-white font-medium px-8 py-2 rounded shadow-sm flex items-center text-sm duration-200;
+    }
+    .cart-btn:hover{
+       @apply hover:bg-transparent hover:text-primary;
+    }
     
 }
 
