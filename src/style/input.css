@@ -34,6 +34,12 @@
     .product-share-icon:hover{
         @apply text-primary/50
     }
+    .input-box{
+        @apply w-full text-sm px-4 py-3 rounded text-gray-400 border border-gray-300 block overflow-hidden capitalize;
+    }
+    .input-box:focus{
+        @apply ring-0 border-primary;
+    }
     
 }
 
