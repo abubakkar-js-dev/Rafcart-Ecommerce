@@ -14,7 +14,7 @@
 }
 @layer components {
     .btn-primary{
-        @apply bg-primary hover:bg-transparent border border-primary text-white px-8 py-3 font-medium rounded-md hover:text-primary transition;
+        @apply bg-primary hover:bg-transparent border border-primary text-white px-8 py-3 font-medium rounded-md hover:text-primary transition text-center;
     }
 
 }

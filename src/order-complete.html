@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout - Rafcart</title>
+    <title>complete - Rafcart</title>
     <link rel="icon" href="../images/avatar2.png">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../dist/style.css">
@@ -170,7 +170,7 @@
             <!-- nav link end -->
         </div>
     </section>
-
+    <!-- mobile menu side bar end -->
 
     <!-- bradcrum -->
     <section class="container py-4 justify-center">
@@ -185,117 +185,20 @@
         </div>
     </section>
     <!-- bradcrum end -->
-    <!-- checkout wrapper  -->
-    <div class="container lg:grid lg:grid-cols-12 items-start pt-4 pb-16 gap-6">
-        <!-- checkout from  -->
-        <div class="lg:col-span-8 border border-gray-200 p-4 rounded shadow-sm">
-            <form action>
-                <h4 class="text-lg font-medium capitalize mb-4">Checkout</h4>
-                <div class="space-y-4">
-                    <div class="grid lg:grid-cols-2 gap-4">
-                        <div>
-                            <label for="firstName" class="text-gray-600 mb-2
-                                block">First Name
-                            <span class="text-primary">*</span></label>
-                            <input type="text" name="firstName" id="firstName" class="input-box">
-                        </div>
-                        <div>
-                            <label for="LastName" class="text-gray-600 mb-2
-                                block">Last Name
-                            <span class="text-primary">*</span></label>
-                            <input type="text" name="lastName" id="lastName" class="input-box">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="CompanyName" class="text-gray-600 mb-2
-                            block">Company Name
-                        <span class="text-primary">*</span></label>
-                        <input type="text" name="companyName" id="companyName" class="input-box">
-                    </div>
-                    <div>
-                        <label for="country" class="text-gray-600 mb-2
-                            block">Country / Relegion
-                        <span class="text-primary">*</span></label>
-                        <input type="text" name="lastName" id="lastName" class="input-box">
-                    </div>
-                    <div>
-                        <label for="name" class="text-gray-600 mb-2
-                            block">Street Address
-                        <span class="text-primary">*</span></label>
-                        <input type="text" name="lastName" id="lastName" class="input-box">
-                    </div>
-                    <div>
-                        <label for="name" class="text-gray-600 mb-2
-                            block">Town/City
-                        <span class="text-primary">*</span></label>
-                        <input type="text" name="lastName" id="lastName" class="input-box">
-                    </div>
-                    <div>
-                        <label for="zip" class="text-gray-600 mb-2
-                            block">Zip Code
-                        <span class="text-primary">*</span></label>
-                        <input type="text" name="zip" id="zip" class="input-box">
-                    </div>
-                    <div>
-                        <label for="phone" class="text-gray-600 mb-2
-                            block">Phone Number
-                        <span class="text-primary">*</span></label>
-                        <input type="tel" name="phone" id="phone" class="input-box">
-                    </div>
-                    <div>
-                        <label for="email" class="text-gray-600 mb-2
-                            block">Email Address
-                        <span class="text-primary">*</span></label>
-                        <input type="email" name="email" id="email" class="input-box">
-                    </div>
-                </div>
-            </form>
+    <!-- complete order wrapper -->
+    <div class="max-w-3xl mx-auto px-4 pt-16 pb-24 text-center">
+        <div class="mb-8">
+            <img src="../images/complete.png" class="w-16 inline-block">
         </div>
-        <!-- chekout from end -->
-        <!-- order summary  -->
-        <div class="lg:col-span-4 border border-gray-200 rounded p-4 mt-6 lg:mt-0">
-            <h3 class="text-lg text-gray-800 font-medium mb-4 uppercase">
-                order summary
-            </h3>
-            <div class="space-y-2">
-                <div class="flex justify-between" v-for="n in 3" :key="n">
-                    <div>
-                        <h4 class="text-gray-800 font-medium capitalize ">Italian shap shofa</h4>
-                        <p class="text-gray-600 text-sm">Size:M</p>
-                    </div>
-                    <p class="text-gray-600">X3</p>
-                    <p class="text-gray-800 font-medium">$350</p>
-                </div>
-            </div>
-            <div class="flex justify-between border-b border-gray-200 mt-1">
-                <h4 class="text-gray-800 font-medium uppercase my-3">Subtotal</h4>
-                <h4 class="text-gray-800 font-medium uppercase my-3">$350</h4>
-            </div>
-            <div class="flex justify-between border-b border-gray-200">
-                <h4 class="text-gray-800 font-medium uppercase my-3">shipping</h4>
-                <h4 class="text-gray-800 font-medium uppercase my-3">Free</h4>
-            </div>
-            <div class="flex justify-between">
-                <h4 class="text-gray-800 font-semibold uppercase my-3">Total</h4>
-                <h4 class="text-gray-800 font-semibold uppercase my-3">$350</h4>
-            </div>
-            <!-- agreement setion -->
-            <div class="flex items-center  mt-2 mb-4">
-                <div class="flex items-center ml-1">
-                    <input type="checkbox" name="remember" id="remember" class="text-primary rounded-sm cursor-pointer focus:ring-0">
-                    <label for="remember" class=" text-gray-500 ml-3 cursor-pointer">Agree to our</label>
-                </div>
-                <a href="#" class="text-primary ml-1">terms and conditions</a>
-            </div>
-            <!-- agreement setion  end-->
-            <!-- checkout complete btn -->
-            <a href="order-complete.html" class="btn-primary w-full block px-3 py-2 uppercase text-center">place order</a>
-            <!-- checkout complete btn end -->
-        
+        <h2 class="text-gray-800 text-3xl font-medium uppercase mb-3">your order is completed!</h2>
+        <p class="text-gray-600">
+            Thank you for your order! Your order is being processed and will be completed within 3-6 hours. You will receive an email confirmation when your order is completed.
+        </p>
+        <div class="mt-10">
+            <a href="index.html" class="btn-primary px-6 py-3 uppercase">continue shopping</a>
         </div>
-        <!-- order summary end -->
     </div>
-    <!-- checkout wrapper end -->
+    <!-- complete order wrapper end -->
 
 
     <!-- footer section -->
